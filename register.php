@@ -79,15 +79,30 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Register</h2>
-<form method="post" action="">
+
+
+<div class="container">
+
+    <div class="form">
+
+        <h2 class="title">Register</h2>
+
+        <form method="post" action="">
     
-    <input type="text" name="username" placeholder="Username" ><br><br>
-    <input type="text" name="email" placeholder="Email" ><br><br>
-    <input type="password" name="password" placeholder="Password" ><br><br>
-    <button type="submit" name="register">Register</button>
-</form>
-<p><?php echo $message; ?></p>
-<p>Already have an account? <a href="index.php">Login</a></p>
+            <input type="text" name="username" placeholder="Username" ><br><br>
+            <input type="text" name="email" placeholder="Email" ><br><br>
+            <input type="password" name="password" placeholder="Password" ><br><br>
+
+            <div class="btn">
+                <button type="submit" name="register" class="btn" style=" padding:10px ; border-radius: 20px; border: none; width:50%;font-size: 1em;">Register
+            </div>
+            
+        </form>
+        
+            <p class="error" style="text-align: center; background-color: red ; border-radius: 20px; font-weight: bolder; color:white;padding: 5px"><?php echo $message; ?></p>
+        
+        <p>Already have an account? <a href="index.php">Login</a></p>
+    </div>
+</div>
 </body>
 </html>
